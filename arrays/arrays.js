@@ -39,9 +39,18 @@ for (letter of letters){
   console.log(letter + " is cool!");
 }
 
+for (letter of letters){
+  if (letter === "A")console.log(letter + " is the one!");
+}
+
+
 function addAwesome(name){
 console.log(name + "is awesome!");
 }
 
-letters.forEach(addAwesome);
-letters.forEach(alert);
+// letters.forEach(addAwesome);
+// letters.forEach(alert);
+
+for (var x in countries){
+  alert(countries[x])
+}
