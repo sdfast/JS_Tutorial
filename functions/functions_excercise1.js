@@ -1,20 +1,20 @@
-//
-//
-// function sleepIn(weekday, vacation){
-//   return (!weekday || vacation)}
-//
-// function monkeyTrouble(aSmile, bSmile){
-//   return (aSmile && bSmile) || (!aSmile && !bSmile)}
-//
-// function stringTimes(str, n){
-//   var returnStr="";
-//   var i = 0;
-//   while (i<n){
-//     returnStr += str
-//     i++
-//   }
-//   return returnStr
-// }
+
+
+function sleepIn(weekday, vacation){
+  return (!weekday || vacation)}
+
+function monkeyTrouble(aSmile, bSmile){
+  return (aSmile && bSmile) || (!aSmile && !bSmile)}
+
+function stringTimes(str, n){
+  var returnStr="";
+  var i = 0;
+  while (i<n){
+    returnStr += str
+    i++
+  }
+  return returnStr
+}
 
 
 function luckySum (a,b,c){
@@ -51,6 +51,7 @@ function makeBricks(x, y, goal){
   var big = 5
   var small = small * x
   var big = big * y
+
   if (small + big === goal){
     return "T"
   }
