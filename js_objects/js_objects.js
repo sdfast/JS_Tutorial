@@ -1,5 +1,5 @@
-
-var carInfo = {make: "Toyota", year:1990, model:"Camry"}
+console.log("Start js_objects.js");
+var carInfo = {make: "Toyota", year: 1990, model:"Camry"}
 var mixedObject = {a: "boyo", b: [1,2,3], c: {inside:carInfo}}
 
 
@@ -18,3 +18,4 @@ for (key in carInfo){
 for (key in carInfo){
   console.log(key, ":", carInfo[key]);
 }
+console.log("End js_objects.js");
