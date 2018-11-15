@@ -17,10 +17,13 @@ var simple = {
 console.log(simple.myMethod());
 
 var anotherObject = {
-  name: "Jose",
+  name: "Paolo",
   greet: function(){
     console.log("Yo " + this.name)
   }
 }
+console.log(anotherObject.name);
+anotherObject.greet();
+
 
 console.log("== End js_objects2.js ==");
