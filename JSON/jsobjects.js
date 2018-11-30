@@ -7,7 +7,7 @@ team = JSON.stringify(team);
 team = JSON.parse(team)
 
 for (t in team){
-  document.write("teams: " + team[t] + " , ")
+  document.write('<li> team: ' + team[t] +  '</li>')
 }
 
 
@@ -28,7 +28,7 @@ var employee = [
 
 var output = "";
 for (var e = 0; e<3; e++){
-  document.write('<div><p id="op">' + employee[e].name + '</p></div>')
+  document.write('<div><p id="op">' + '- ' + employee[e].name + '</p></div>')
   // console.log(output += '<li>'+ employee[e].name +'</li>');
 }
 
