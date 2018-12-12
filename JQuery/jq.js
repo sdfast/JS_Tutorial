@@ -23,6 +23,7 @@ inp.eq(0).val('new value!')
 // adding a class to an element
 $('h1').addClass('changed1')
 $('li').addClass('all_lists')
+$('p').addClass('turnBlue')
 // removing a class$
 
 $('li').removeClass('all_lists')
