@@ -23,13 +23,21 @@ inp.eq(0).val('new value!')
 // adding a class to an element
 $('h1').addClass('changed1')
 $('li').addClass('all_lists')
-$('p').addClass('turnBlue')
+$('p').addClass('turnRed')
+
+$('p').removeClass('turnRed')
 // removing a class$
 
 $('li').removeClass('all_lists')
 
 var parag = $('p')
 
-// for (var i=0; i<2, i++){
-//   parag.toggleClass('turnBlue')
-// }
+//Events
+
+$('h1').click(function(){
+  $(this).text("Changed Changed")
+})
+
+$('li').click(){
+  console.log("Was clicked");
+}
