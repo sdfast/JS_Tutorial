@@ -33,3 +33,11 @@ for (var p in parag){
   parag[1].textContent = "<strong>ZZZ ZZZ ZZZ</strong>"
   parag[2].innerHTML = "<strong><i>CCC CCC CCC</i></strong>"
 }
+
+var body = document.querySelector('body')
+var p1 = document.createElement("P");
+
+p1.style.marginTop="20px"
+p1.style.marginLeft="20px"
+p1.innerHTML = "paragraph TEXT"
+p1.style.color = "red"

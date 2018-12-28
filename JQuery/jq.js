@@ -34,10 +34,37 @@ var parag = $('p')
 
 //Events
 
-$('h1').click(function(){
-  $(this).text("Changed Changed")
+// $('h1').click(function(){
+//   $(this).text("Changed Changed")
+// })
+
+
+
+function appendp1(){
+  return body.appendChild(p1)}
+
+
+$('li').click(function(){
+  console.log("<li>Was clicked");
 })
 
-$('li').click(){
-  console.log("Was clicked");
-}
+$('input').eq(0).keypress(function(){
+  console.log(event);
+  if (event.code === "Enter"){
+    $('h3').toggleClass('turnBlue');
+  }
+})
+
+// on is like addEventListener
+$('p').on('dblclick',function() {
+  $(this).toggleClass('turnBlue');
+})
+
+// when input clicked "container class" is faded out after 3000
+$('input').eq(1).on('click', function(){
+  $('.container').fadeOut(3000)
+})
+
+$('input').eq(3).on('dblclick', function(){
+  $('.container').slideUp(2000)
+})
